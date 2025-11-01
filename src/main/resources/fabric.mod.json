@@ -1,40 +1,37 @@
 {
-	"schemaVersion": 1,
-	"id": "paymenow",
-	"version": "${version}",
-	"name": "PayMeNow",
-	"description": "Advanced Economy Mod",
-	"authors": [
-		"konstip"
-	],
-	"contact": {
-		"github": "https://github.com/konstip0",
-		"sources": "https://github.com/konstip0/paymenow"
-	},
-	"license": "MIT",
-	"icon": "assets/paymenow/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"me.konstip.paymenow.PayMeNow"
-		],
-		"fabric-datagen": [
-			"me.konstip.paymenow.PayMeNowDataGenerator"
-		],
-        "client": [
-            "me.konstip.paymenow.PayMeNowClient"
-        ]
-	},
-	"mixins": [
-		"paymenow.mixins.json"
-	],
-	"depends": {
-		"fabricloader": ">=0.17.3",
-		"minecraft": "~1.21.10",
-		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
-	}
+  "schemaVersion": 1,
+  "id": "paymenow",
+  "version": "${version}",
+  "name": "PayMeNow",
+  "description": "Advanced Economy Mod",
+  "authors": [
+    "konstip"
+  ],
+  "contact": {
+    "github": "https://github.com/konstip0",
+    "sources": "https://github.com/konstip0/paymenow"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.konstip.paymenow.PayMeNow"
+    ],
+    "fabric-datagen": [
+      "me.konstip.paymenow.PayMeNowDataGenerator"
+    ],
+    "client": [
+      "me.konstip.paymenow.PayMeNowClient"
+    ]
+  },
+  "mixins": [
+    "paymenow.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.3",
+    "minecraft": "~1.21.10",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
 }
